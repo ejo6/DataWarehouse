@@ -18,24 +18,6 @@ app = FastAPI(
     ],
 )
 
-#--------------------------------
-# API Classes (DEPRECATED)
-#--------------------------------
-
-"""
-
-If we wanted a base class and not have params in swagger 
-to be entered we would just definte the class:
-
-class Query(BaseModel):
-    sql: str
-    params: list | None = None
-
-and def query(req: Query)
-    params = [req.sql, req.params]
-
-"""
-
 
 # --- Global Variable to Store Active WarehouseManager Instance ---
 wm: WarehouseManager | None = None
